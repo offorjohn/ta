@@ -4,7 +4,6 @@
 	async function logout() {
 		const res = await fetch('/api/logout', { method: 'POST' });
 		if (res.ok) {
-			// On logout, redirect to login page
 			goto('/');
 		}
 	}

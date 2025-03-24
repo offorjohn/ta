@@ -16,7 +16,6 @@
 		});
 
 		if (res.ok) {
-			// On successful login, redirect to dashboard
 			goto('/dashboard');
 		} else {
 			const err = await res.json();
@@ -31,7 +30,6 @@
 		<p class="text-red-500 mb-4">{error}</p>
 	{/if}
 	<div class="mb-4">
-		<!-- svelte-ignore a11y_label_has_associated_control -->
 		<label class="block text-gray-700 mb-2">Username</label>
 		<input
 			type="text"
@@ -41,7 +39,6 @@
 		/>
 	</div>
 	<div class="mb-6">
-		<!-- svelte-ignore a11y_label_has_associated_control -->
 		<label class="block text-gray-700 mb-2">Password</label>
 		<input
 			type="password"
